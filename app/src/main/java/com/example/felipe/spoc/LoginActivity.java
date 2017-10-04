@@ -16,7 +16,7 @@ import android.widget.Toast;
 public class LoginActivity extends AppCompatActivity {
 
 
-    DatabaseHelper helper = new DatabaseHelper(this);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -26,17 +26,8 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         Button botaoRegistrar = (Button) findViewById(R.id.btnRegistrarLOGIN);
-        Button limparTudo = (Button) findViewById(R.id.btnLimparTudo);
 
 
-        limparTudo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mostrarToastCurto("Banco limpo com sucesso "+helper.lugar(getApplicationContext()));
-                helper.limpaTudo();
-
-            }
-        });
 
         botaoRegistrar.setOnClickListener(new View.OnClickListener() {
             @Override

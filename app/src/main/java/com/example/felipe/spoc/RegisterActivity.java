@@ -17,7 +17,7 @@ import android.widget.Toast;
 public class RegisterActivity extends AppCompatActivity {
 
 
-    DatabaseHelper helper = new DatabaseHelper(this);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
